@@ -1,14 +1,13 @@
 package com.travelagency.travelagency.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import com.travelagency.travelagency.entity.User;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class UserController {
     @RequestMapping("/main")
-    public String method(Model model){
-        System.out.println("afaf");
-        return "hello";
+    public User method(){
+        return new User("User1");
     }
 }
