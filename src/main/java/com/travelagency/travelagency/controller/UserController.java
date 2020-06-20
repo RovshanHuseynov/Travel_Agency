@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @RequestMapping("/main")
     public User method(){
-        return new User("User1");
+        return new User("aaa");
     }
 }
